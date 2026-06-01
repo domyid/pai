@@ -7,8 +7,14 @@ Web latihan ujian pilihan ganda yang seru untuk anak: tulis nama, pilih tema kar
 favorit (Kuromi, Keroppi, Cinnamoroll, Pochacco), pilih kelas (2 atau 3), kerjakan soal
 dengan timer, dapat skor + poin, lalu tukar poin dengan hadiah (snack / screen time / dll).
 
-**Fitur:** input nama • 4 tema karakter • timer per soal • bank soal besar (acak tiap main) •
-skor & predikat • poin + bonus streak • toko hadiah • efek suara & konfeti.
+**Fitur:** input nama • 4 tema karakter • **2 mode: Belajar & Ujian** • timer per soal •
+bank soal besar (acak tiap main) • skor & predikat • poin + bonus streak • toko hadiah •
+efek suara & konfeti.
+
+**Mode Belajar** (📖): membaca semua soal per nomor lengkap dengan **jawaban benar yang
+ditandai + penjelasan**, tanpa skor & tanpa timer. Bisa maju-mundur antar materi dan menekan
+"🔀 Soal lain" untuk melihat varian lain dari nomor yang sama. Cocok dibaca bareng Ayah/Bunda
+sebelum mencoba **Mode Ujian** (📝).
 
 ### ▶️ Cara Menjalankan (paling mudah)
 

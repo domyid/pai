@@ -177,9 +177,48 @@ function layarKelas() {
     btn.addEventListener("click", () => {
       sfx.suaraKlik();
       state.kelas = btn.dataset.kelas;
-      mulaiUjian();
+      layarMode();
     });
   });
+
+  ganti(node);
+}
+
+/* ---------- Layar 2b: Pilih Aktivitas (Ujian / Belajar) ---------- */
+function layarMode() {
+  const t = themes[state.theme];
+  const bank = bankSoal[state.kelas];
+  const node = el(`
+    <section class="screen">
+      <div class="topbar">
+        <button class="link-btn" id="kembali">⬅ Ganti kelas</button>
+        ${badgePoin()}
+      </div>
+      <div class="hero kecil">
+        <span class="maskot">${t.emoji}</span>
+        <h1>Kelas ${state.kelas} SD</h1>
+      </div>
+      <h2 class="tanya">${namaTampil()}, mau ngapain dulu?</h2>
+      <div class="kelas-grid">
+        <button class="kelas-card" id="modeBelajar">
+          <span class="mode-emoji">📖</span>
+          <span class="kelas-judul">Mode Belajar</span>
+          <span class="kelas-materi">Baca soal, jawaban benar, dan penjelasannya. Santai, tanpa skor & tanpa waktu.</span>
+        </button>
+        <button class="kelas-card" id="modeUjian">
+          <span class="mode-emoji">📝</span>
+          <span class="kelas-judul">Mulai Ujian</span>
+          <span class="kelas-materi">Latihan ujian ${bank.jumlahSoalUjian} soal, ada waktu, skor, dan poin hadiah.</span>
+        </button>
+      </div>
+      <button class="toko-link" id="bukaToko">🎁 Lihat Toko Hadiah</button>
+    </section>
+  `);
+
+  node.querySelector("#kembali").addEventListener("click", () => { sfx.suaraKlik(); layarKelas(); });
+  node.querySelector("#bukaToko").addEventListener("click", () => { sfx.suaraKlik(); layarToko(layarMode); });
+  node.querySelector("#modeUjian").addEventListener("click", () => { sfx.suaraKlik(); mulaiUjian(); });
+  node.querySelector("#modeBelajar").addEventListener("click", () => { sfx.suaraKlik(); mulaiBelajar(); });
 
   ganti(node);
 }
@@ -196,6 +235,97 @@ function mulaiUjian() {
   state.quiz = new Quiz(bankSoal[state.kelas]);
   state.mulaiWaktu = Date.now();
   layarSoal();
+}
+
+/* ---------- Mode Belajar ---------- */
+function mulaiBelajar() {
+  const bank = bankSoal[state.kelas];
+  // kelompokkan soal per nomor (urut), simpan semua varian
+  const perNomor = new Map();
+  for (const s of bank.soal) {
+    if (!perNomor.has(s.nomor)) perNomor.set(s.nomor, []);
+    perNomor.get(s.nomor).push(s);
+  }
+  const nomorUrut = [...perNomor.keys()].sort((a, b) => a - b);
+  state.belajar = {
+    perNomor,
+    nomorUrut,
+    idx: 0, // posisi nomor saat ini
+    varian: Object.fromEntries(nomorUrut.map((n) => [n, 0])), // varian aktif tiap nomor
+  };
+  layarBelajar();
+}
+
+function layarBelajar() {
+  const b = state.belajar;
+  const nomor = b.nomorUrut[b.idx];
+  const variants = b.perNomor.get(nomor);
+  const s = variants[b.varian[nomor] % variants.length];
+  const total = b.nomorUrut.length;
+
+  const opsiHtml = s.opsi
+    .map((teks, i) => {
+      const benar = i === s.jawaban;
+      return `<div class="opsi statis ${benar ? "benar" : ""}">
+        <span class="opsi-label">${benar ? "✓" : String.fromCharCode(65 + i)}</span>
+        <span class="opsi-teks">${teks}</span>
+      </div>`;
+    })
+    .join("");
+
+  const node = el(`
+    <section class="screen belajar">
+      <div class="topbar">
+        <button class="link-btn" id="kembali">⬅ Selesai belajar</button>
+        <span class="chip">📖 Belajar • Kelas ${state.kelas}</span>
+        <span class="chip">Materi ${b.idx + 1}/${total}</span>
+      </div>
+      <div class="progress"><div class="progress-bar" style="width:${((b.idx + 1) / total) * 100}%"></div></div>
+
+      <div class="kartu-soal">
+        <div class="tag-baris">
+          <span class="no-badge">No. ${nomor}</span>
+          <span class="kategori">${s.kategori}</span>
+          <span class="bentuk bentuk-${(s.bentuk || "PG").toLowerCase()}">${s.bentuk || "PG"}</span>
+          ${variants.length > 1 ? `<span class="varian-info">varian ${(b.varian[nomor] % variants.length) + 1}/${variants.length}</span>` : ""}
+        </div>
+        ${s.arab ? `<div class="arab">${s.arab}</div>` : ""}
+        <p class="pertanyaan">${s.soal}</p>
+      </div>
+
+      <div class="opsi-list">${opsiHtml}</div>
+
+      <div class="feedback belajar-jawab">
+        <strong class="f-benar">✓ Jawaban benar: ${String.fromCharCode(65 + s.jawaban)}</strong>
+        <p class="penjelasan">💡 ${s.penjelasan}</p>
+      </div>
+
+      <div class="nav-belajar">
+        <button class="btn-sekunder" id="prev" ${b.idx === 0 ? "disabled" : ""}>⬅ Sebelumnya</button>
+        ${variants.length > 1 ? `<button class="btn-sekunder" id="varian">🔀 Soal lain</button>` : ""}
+        <button class="btn-utama" id="next">${b.idx + 1 < total ? "Berikutnya ➡" : "Selesai 🎉"}</button>
+      </div>
+    </section>
+  `);
+
+  node.querySelector("#kembali").addEventListener("click", () => { sfx.suaraKlik(); layarMode(); });
+  node.querySelector("#prev").addEventListener("click", () => {
+    if (b.idx === 0) return;
+    sfx.suaraKlik(); b.idx--; layarBelajar();
+  });
+  node.querySelector("#next").addEventListener("click", () => {
+    sfx.suaraKlik();
+    if (b.idx + 1 < total) { b.idx++; layarBelajar(); }
+    else layarMode();
+  });
+  const vBtn = node.querySelector("#varian");
+  if (vBtn) vBtn.addEventListener("click", () => {
+    sfx.suaraKlik();
+    b.varian[nomor] = (b.varian[nomor] + 1) % variants.length;
+    layarBelajar();
+  });
+
+  ganti(node);
 }
 
 /* ---------- Layar 3: Soal ---------- */

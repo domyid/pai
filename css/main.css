@@ -684,6 +684,50 @@ h2 {
   cursor: not-allowed;
 }
 
+/* ============ Mode Belajar ============ */
+.mode-emoji {
+  font-size: 2.8rem;
+}
+.no-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+.varian-info {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  align-self: center;
+}
+/* opsi versi baca-saja (tidak bisa diklik) */
+.opsi.statis {
+  cursor: default;
+}
+.opsi.statis:hover {
+  transform: none;
+  border-color: transparent;
+}
+.opsi.statis.benar:hover {
+  border-color: var(--correct);
+}
+.belajar-jawab {
+  margin-top: 14px;
+}
+.nav-belajar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+.nav-belajar button {
+  flex: 1 1 30%;
+  min-width: 120px;
+}
+
 /* ============ Toggle suara melayang ============ */
 .toggle-suara {
   position: fixed;
