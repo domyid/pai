@@ -645,6 +645,11 @@ h2 {
   transform: scale(1.02);
   background: #1ebe5a;
 }
+.toko .btn-wa {
+  display: block;
+  width: 100%;
+  margin: 4px 0 14px;
+}
 
 /* ============ Pembahasan jawaban salah ============ */
 .pembahasan {

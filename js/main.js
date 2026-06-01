@@ -580,24 +580,48 @@ function layarHasil() {
   ganti(node);
 }
 
-// Bagikan ringkasan hasil ke WhatsApp (wa.me membuka pilihan kontak/grup).
+// Buka WhatsApp dengan teks siap kirim (wa.me membuka pilihan kontak/grup).
+function bukaWhatsApp(teks) {
+  const url = "https://wa.me/?text=" + encodeURIComponent(teks);
+  window.open(url, "_blank");
+}
+
+// Bagikan ringkasan hasil ujian ke WhatsApp.
 function bagikanWhatsApp({ nilai, predikat, emoji, totalPoin, salah }) {
   const q = state.quiz;
   const nomorSalah = salah.map((x) => x.nomor).join(", ");
-  const baris = [
-    "🌸 *Hasil Simulasi Ujian PAI & BP* 🌸",
-    "",
-    `👤 Nama: ${namaTampil()}`,
-    `🏫 Kelas: ${state.kelas} SD`,
-    `📊 Nilai: *${nilai}* ${emoji} (${predikat})`,
-    `✅ Benar: ${q.benar} dari ${q.total} soal`,
-    `⭐ Poin didapat: +${q.poin} (total ${totalPoin})`,
-    salah.length ? `📝 Perlu diulang: nomor ${nomorSalah}` : "🎉 Semua jawaban benar!",
-    "",
-    "Berlatih di aplikasi Simulasi Ujian PAI & BP 💕",
-  ];
-  const url = "https://wa.me/?text=" + encodeURIComponent(baris.join("\n"));
-  window.open(url, "_blank");
+  bukaWhatsApp(
+    [
+      "🌸 *Hasil Simulasi Ujian PAI & BP* 🌸",
+      "",
+      `👤 Nama: ${namaTampil()}`,
+      `🏫 Kelas: ${state.kelas} SD`,
+      `📊 Nilai: *${nilai}* ${emoji} (${predikat})`,
+      `✅ Benar: ${q.benar} dari ${q.total} soal`,
+      `⭐ Poin didapat: +${q.poin} (total ${totalPoin})`,
+      salah.length ? `📝 Perlu diulang: nomor ${nomorSalah}` : "🎉 Semua jawaban benar!",
+      "",
+      "Berlatih di aplikasi Simulasi Ujian PAI & BP 💕",
+    ].join("\n")
+  );
+}
+
+// Bagikan jumlah poin terkumpul (dari Toko Hadiah) ke WhatsApp.
+function bagikanPoinWhatsApp() {
+  const poin = store.getPoin(state.profil);
+  const bisaDitukar = rewards.filter((r) => poin >= r.biaya).map((r) => r.nama);
+  bukaWhatsApp(
+    [
+      "🎁 *Poin Hadiah — Simulasi Ujian PAI & BP* 🎁",
+      "",
+      `👤 ${namaTampil()} sudah mengumpulkan *${poin} poin* ⭐`,
+      bisaDitukar.length
+        ? `Bisa ditukar dengan: ${bisaDitukar.join(", ")}`
+        : "Ayo kerjakan ujian lagi untuk menambah poin!",
+      "",
+      "Berlatih di aplikasi Simulasi Ujian PAI & BP 💕",
+    ].join("\n")
+  );
 }
 
 /* ---------- Layar 5: Toko Hadiah ---------- */
@@ -628,6 +652,7 @@ function layarToko(kembaliKe) {
       <h1>🎁 Toko Hadiah ${namaTampil()}</h1>
       <p class="sub">Kumpulkan poin dengan menjawab benar, lalu tukar dengan hadiah!<br>
       <small>(Tunjukkan ke Ayah/Bunda untuk menukar hadiahnya 😊)</small></p>
+      <button class="btn-wa" id="shareWaPoin">💬 Bagikan Poin ke WhatsApp</button>
       <div class="reward-list">${daftar}</div>
     </section>
   `);
@@ -635,6 +660,10 @@ function layarToko(kembaliKe) {
   node.querySelector("#kembali").addEventListener("click", () => {
     sfx.suaraKlik();
     kembaliKe();
+  });
+  node.querySelector("#shareWaPoin").addEventListener("click", () => {
+    sfx.suaraKlik();
+    bagikanPoinWhatsApp();
   });
 
   node.querySelectorAll(".btn-tukar").forEach((btn) => {
