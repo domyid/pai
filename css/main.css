@@ -627,6 +627,91 @@ h2 {
   transform: scale(1.02);
 }
 
+/* ============ Tombol WhatsApp ============ */
+.btn-wa {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 15px;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.02rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.12s ease, background 0.2s;
+}
+.btn-wa:hover {
+  transform: scale(1.02);
+  background: #1ebe5a;
+}
+
+/* ============ Pembahasan jawaban salah ============ */
+.pembahasan {
+  text-align: left;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  animation: masuk 0.3s ease;
+}
+.bahas-judul {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.bahas-item {
+  border-top: 2px dashed var(--card-soft);
+  padding: 12px 0;
+}
+.bahas-item:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+.bahas-no {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+.bahas-soal {
+  font-weight: 600;
+  margin: 4px 0 8px;
+  line-height: 1.4;
+}
+.bahas-jwb {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.salah-jwb {
+  color: var(--wrong);
+  font-weight: 700;
+}
+.benar-jwb {
+  color: var(--correct);
+  font-weight: 700;
+}
+.bahas-penjelasan {
+  background: var(--card-soft);
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-dim);
+}
+.bahas-sempurna {
+  text-align: center;
+  font-weight: 700;
+  color: var(--correct);
+  padding: 8px;
+}
+
 /* ============ Toko Hadiah ============ */
 .toko h1 {
   text-align: center;

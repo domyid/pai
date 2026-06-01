@@ -483,6 +483,39 @@ function layarHasil() {
     confetti({ jumlah: 120, durasi: 2200 });
   }
 
+  // Kumpulkan daftar jawaban yang salah (untuk pembahasan).
+  const salah = [];
+  q.soal.forEach((s, i) => {
+    const ans = q.jawabanUser[i];
+    if (ans && !ans.benar) {
+      salah.push({
+        nomor: s.nomor,
+        soal: s.soal,
+        benarTeks: s.opsiAcak[s.indexBenar].teks,
+        pilihTeks: ans.dipilih >= 0 ? s.opsiAcak[ans.dipilih].teks : null,
+        penjelasan: s.penjelasan,
+      });
+    }
+  });
+  salah.sort((a, b) => a.nomor - b.nomor);
+
+  const pembahasanHtml = salah.length
+    ? salah
+        .map(
+          (x) => `
+        <div class="bahas-item">
+          <div class="bahas-no">No. ${x.nomor}</div>
+          <p class="bahas-soal">${x.soal}</p>
+          <p class="bahas-jwb salah-jwb">❌ Jawabanmu: ${
+            x.pilihTeks ? x.pilihTeks : "<i>(tidak dijawab / waktu habis)</i>"
+          }</p>
+          <p class="bahas-jwb benar-jwb">✅ Jawaban benar: ${x.benarTeks}</p>
+          <p class="bahas-penjelasan">💡 ${x.penjelasan}</p>
+        </div>`
+        )
+        .join("")
+    : `<p class="bahas-sempurna">🎉 Hebat! Semua jawaban benar, tidak ada yang perlu diperbaiki!</p>`;
+
   const node = el(`
     <section class="screen hasil">
       <div class="medali ${warnaKelas}">${emoji}</div>
@@ -505,6 +538,12 @@ function layarHasil() {
       <div class="poin-total">Total poin ${namaTampil()}: <b>${totalPoin} ⭐</b></div>
 
       <div class="aksi-hasil">
+        <button class="btn-wa" id="shareWa">💬 Bagikan Hasil ke WhatsApp</button>
+        <button class="btn-sekunder" id="toggleBahas">📋 Lihat Jawaban yang Salah (${salah.length})</button>
+        <div class="pembahasan" id="pembahasan" hidden>
+          <h3 class="bahas-judul">Pembahasan Jawaban Salah</h3>
+          ${pembahasanHtml}
+        </div>
         <button class="btn-utama" id="keToko">🎁 Tukar Poin di Toko Hadiah</button>
         <button class="btn-sekunder" id="ulang">🔁 Ujian Lagi (Kelas ${state.kelas})</button>
         <button class="link-btn" id="ganti">Ganti kelas / teman</button>
@@ -512,6 +551,19 @@ function layarHasil() {
     </section>
   `);
 
+  node.querySelector("#shareWa").addEventListener("click", () => {
+    sfx.suaraKlik();
+    bagikanWhatsApp({ nilai, predikat, emoji, totalPoin, salah });
+  });
+  node.querySelector("#toggleBahas").addEventListener("click", (e) => {
+    sfx.suaraKlik();
+    const panel = node.querySelector("#pembahasan");
+    panel.hidden = !panel.hidden;
+    e.currentTarget.textContent = panel.hidden
+      ? `📋 Lihat Jawaban yang Salah (${salah.length})`
+      : `📋 Sembunyikan Pembahasan`;
+    if (!panel.hidden) panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
   node.querySelector("#keToko").addEventListener("click", () => {
     sfx.suaraKlik();
     layarToko(layarHasil);
@@ -526,6 +578,26 @@ function layarHasil() {
   });
 
   ganti(node);
+}
+
+// Bagikan ringkasan hasil ke WhatsApp (wa.me membuka pilihan kontak/grup).
+function bagikanWhatsApp({ nilai, predikat, emoji, totalPoin, salah }) {
+  const q = state.quiz;
+  const nomorSalah = salah.map((x) => x.nomor).join(", ");
+  const baris = [
+    "🌸 *Hasil Simulasi Ujian PAI & BP* 🌸",
+    "",
+    `👤 Nama: ${namaTampil()}`,
+    `🏫 Kelas: ${state.kelas} SD`,
+    `📊 Nilai: *${nilai}* ${emoji} (${predikat})`,
+    `✅ Benar: ${q.benar} dari ${q.total} soal`,
+    `⭐ Poin didapat: +${q.poin} (total ${totalPoin})`,
+    salah.length ? `📝 Perlu diulang: nomor ${nomorSalah}` : "🎉 Semua jawaban benar!",
+    "",
+    "Berlatih di aplikasi Simulasi Ujian PAI & BP 💕",
+  ];
+  const url = "https://wa.me/?text=" + encodeURIComponent(baris.join("\n"));
+  window.open(url, "_blank");
 }
 
 /* ---------- Layar 5: Toko Hadiah ---------- */

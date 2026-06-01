@@ -9,7 +9,8 @@ dengan timer, dapat skor + poin, lalu tukar poin dengan hadiah (snack / screen t
 
 **Fitur:** input nama • 4 tema karakter • **2 mode: Belajar & Ujian** • timer per soal •
 bank soal besar (acak tiap main) • skor & predikat • poin + bonus streak • toko hadiah •
-efek suara & konfeti.
+**pembahasan jawaban salah** (nomor, jawaban anak vs jawaban benar, penjelasan) •
+**bagikan hasil ke WhatsApp** • efek suara & konfeti.
 
 **Mode Belajar** (📖): membaca semua soal per nomor lengkap dengan **jawaban benar yang
 ditandai + penjelasan**, tanpa skor & tanpa timer. Bisa maju-mundur antar materi dan menekan
