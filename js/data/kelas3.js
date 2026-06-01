@@ -435,5 +435,307 @@ export const kelas3 = {
       soal: "Pasangan kitab dan nabi penerima yang SEMUANYA benar adalah ...",
       opsi: ["Zabur–Daud, Injil–Isa, Al-Qur'an–Muhammad", "Zabur–Isa, Injil–Daud, Al-Qur'an–Musa", "Taurat–Isa, Injil–Musa, Zabur–Daud", "Al-Qur'an–Daud, Taurat–Isa, Injil–Musa"], jawaban: 0,
       penjelasan: "Zabur→Daud, Injil→Isa, Al-Qur'an→Nabi Muhammad saw." },
+
+    /* ================= TAMBAHAN VARIAN (agar 5–6 per nomor) ================= */
+
+    /* No.1 */
+    { nomor: 1, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Kata بِسَبْعٍ وَّعِشْرِيْنَ dalam hadis shalat berjamaah berarti ...",
+      opsi: ["Dua puluh tujuh", "Tujuh", "Tujuh belas", "Dua puluh"], jawaban: 0,
+      penjelasan: "بِسَبْعٍ وَّعِشْرِيْنَ artinya 'dua puluh tujuh' (27)." },
+    { nomor: 1, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Lawan kata 'berjamaah' (الجماعة) dalam hadis adalah 'sendirian', yaitu ...",
+      opsi: ["الْفَذِّ (al-fadz)", "الصَّلَاةِ", "الدَّرَجَةِ", "اَفْضَلُ"], jawaban: 0,
+      penjelasan: "Al-fadz (الْفَذِّ) berarti sendirian." },
+
+    /* No.2 */
+    { nomor: 2, bentuk: "PG", kategori: "Al-Qur'an & Hadis", arab: "الْفَذِّ",
+      soal: "Cara membaca lafal di atas yang benar adalah ...",
+      opsi: ["Al-fadzdzi", "Al-jamaa'ati", "Al-laili", "Ad-duhaa"], jawaban: 0,
+      penjelasan: "الْفَذِّ dibaca 'al-fadzdzi', artinya sendirian." },
+    { nomor: 2, bentuk: "PG", kategori: "Al-Qur'an & Hadis", arab: "مِنْ صَلَاةِ",
+      soal: "Cara membaca lafal di atas yang benar adalah ...",
+      opsi: ["Min shalaati", "Min jamaa'ati", "Min darajati", "Min afdhali"], jawaban: 0,
+      penjelasan: "مِنْ صَلَاةِ dibaca 'min shalaati'." },
+
+    /* No.3 */
+    { nomor: 3, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Contoh hadis yang berupa perbuatan Nabi Muhammad saw. adalah ...",
+      opsi: ["Cara Nabi melaksanakan shalat", "Khayalan seseorang", "Mimpi orang biasa", "Cerita rakyat"], jawaban: 0,
+      penjelasan: "Perbuatan Nabi (cara shalat, dll) termasuk hadis fi'li." },
+    { nomor: 3, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Persetujuan atau ketetapan Nabi terhadap perbuatan sahabat disebut ...",
+      opsi: ["Taqrir (ketetapan)", "Mukjizat", "Wahyu jin", "Doa"], jawaban: 0,
+      penjelasan: "Ketetapan/persetujuan Nabi disebut taqrir, bagian dari hadis." },
+
+    /* No.4 */
+    { nomor: 4, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Dalam shalat berjamaah, makmum berdiri di ... imam.",
+      opsi: ["Belakang", "Depan", "Atas", "Hadapan"], jawaban: 0,
+      penjelasan: "Makmum berdiri di belakang imam." },
+    { nomor: 4, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Posisi imam yang benar dalam shalat berjamaah adalah di ...",
+      opsi: ["Paling depan", "Paling belakang", "Samping kiri", "Tengah saf makmum"], jawaban: 0,
+      penjelasan: "Imam berada di paling depan untuk diikuti makmum." },
+
+    /* No.5 */
+    { nomor: 5, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Lengkapilah! Pahala shalat berjamaah adalah ... derajat lebih utama daripada sendirian.",
+      opsi: ["27", "7", "17", "72"], jawaban: 0,
+      penjelasan: "Keutamaannya 27 derajat." },
+    { nomor: 5, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Bilangan derajat keutamaan shalat berjamaah dalam hadis adalah ...",
+      opsi: ["Dua puluh tujuh", "Tujuh", "Tujuh belas", "Tiga puluh"], jawaban: 0,
+      penjelasan: "Yaitu 27 (dua puluh tujuh) derajat." },
+
+    /* No.6 */
+    { nomor: 6, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Beriman kepada kitab Allah berarti meyakini bahwa kitab itu ... Allah.",
+      opsi: ["Diturunkan oleh", "Dikarang manusia untuk", "Milik pribadi", "Dilupakan oleh"], jawaban: 0,
+      penjelasan: "Kitab-kitab itu benar-benar diturunkan oleh Allah." },
+    { nomor: 6, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Isi kitab-kitab Allah berupa ... bagi umat manusia.",
+      opsi: ["Petunjuk dan pedoman hidup", "Cerita hiburan", "Teka-teki", "Lagu"], jawaban: 0,
+      penjelasan: "Kitab Allah berisi petunjuk/pedoman hidup." },
+
+    /* No.7 */
+    { nomor: 7, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Beriman kepada kitab Allah adalah rukun iman setelah iman kepada ...",
+      opsi: ["Malaikat", "Hari akhir", "Qadar", "Rasul"], jawaban: 0,
+      penjelasan: "Urutan: Allah, malaikat, lalu kitab (rukun ke-3)." },
+    { nomor: 7, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Rukun iman yang ke-3 berkaitan dengan iman kepada ...",
+      opsi: ["Kitab-kitab Allah", "Malaikat", "Nabi", "Takdir"], jawaban: 0,
+      penjelasan: "Rukun iman ke-3 adalah iman kepada kitab-kitab Allah." },
+
+    /* No.8 */
+    { nomor: 8, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Taurat adalah kitab yang Allah turunkan kepada Nabi ...",
+      opsi: ["Musa a.s.", "Isa a.s.", "Daud a.s.", "Nuh a.s."], jawaban: 0,
+      penjelasan: "Taurat diturunkan kepada Nabi Musa a.s." },
+    { nomor: 8, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Nabi Musa a.s. memimpin Bani Israil berpedoman pada kitab ...",
+      opsi: ["Taurat", "Injil", "Zabur", "Al-Qur'an"], jawaban: 0,
+      penjelasan: "Kitab Nabi Musa adalah Taurat." },
+
+    /* No.9 */
+    { nomor: 9, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Perbuatan yang bertentangan dengan iman kepada kitab Allah adalah ...",
+      opsi: ["Menginjak dan mencoret-coret Al-Qur'an", "Membacanya", "Menghormatinya", "Mengamalkannya"], jawaban: 0,
+      penjelasan: "Menghina kitab suci bertentangan dengan iman kepada kitab Allah." },
+    { nomor: 9, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Manakah yang TIDAK menunjukkan iman kepada Al-Qur'an?",
+      opsi: ["Membiarkannya tanpa pernah dibaca", "Rajin tadarus", "Belajar artinya", "Mengamalkannya"], jawaban: 0,
+      penjelasan: "Membiarkan Al-Qur'an tanpa dibaca bukan cara beriman." },
+
+    /* No.10 */
+    { nomor: 10, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Ucapan zikir seperti tasbih dan tahmid termasuk ...",
+      opsi: ["Kalimat tayyibah", "Kalimat tanya", "Pantun", "Syair"], jawaban: 0,
+      penjelasan: "Tasbih dan tahmid termasuk kalimat tayyibah." },
+    { nomor: 10, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Kalimat tayyibah artinya kalimat yang ...",
+      opsi: ["Baik", "Buruk", "Kasar", "Sia-sia"], jawaban: 0,
+      penjelasan: "Tayyibah berarti baik. Kalimat tayyibah = kalimat yang baik." },
+
+    /* No.11 */
+    { nomor: 11, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Saat melihat langit malam berbintang yang indah, kita mengucapkan ...",
+      opsi: ["Subhanallah", "Astaghfirullah", "Innalillahi", "Naudzubillah"], jawaban: 0,
+      penjelasan: "Subhanallah diucapkan saat kagum pada keindahan ciptaan Allah." },
+    { nomor: 11, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Ucapan tasbih 'Subhanallah' menunjukkan bahwa Allah Maha ...",
+      opsi: ["Suci", "Besar", "Pemurah", "Penyayang"], jawaban: 0,
+      penjelasan: "Subhanallah = Maha Suci Allah." },
+
+    /* No.12 */
+    { nomor: 12, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Bacaan takbiratul ihram dalam shalat adalah 'Allahu Akbar' yang berarti ...",
+      opsi: ["Allah Maha Besar", "Maha Suci Allah", "Segala puji bagi Allah", "Tiada Tuhan selain Allah"], jawaban: 0,
+      penjelasan: "Allahu Akbar artinya Allah Maha Besar." },
+    { nomor: 12, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Lafal yang disebut 'takbir' adalah ...",
+      opsi: ["Allahu Akbar", "Subhanallah", "Alhamdulillah", "La ilaha illallah"], jawaban: 0,
+      penjelasan: "Takbir = Allahu Akbar (Allah Maha Besar)." },
+
+    /* No.13 */
+    { nomor: 13, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Penulisan lafal 'Allah' dalam huruf Arab yang benar adalah ...",
+      opsi: ["اللّٰه", "الاه", "عالله", "هلال"], jawaban: 0,
+      penjelasan: "Penulisan yang benar adalah اللّٰه." },
+    { nomor: 13, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Huruf shad ditulis dengan bentuk ...",
+      opsi: ["ص", "س", "ض", "ث"], jawaban: 0,
+      penjelasan: "Huruf shad ditulis ص (dipakai pada kata صَلَاة)." },
+
+    /* No.14 */
+    { nomor: 14, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Kesimpulan hadis: shalat berjamaah lebih ... daripada shalat sendirian.",
+      opsi: ["Utama", "Buruk", "Berat", "Lama"], jawaban: 0,
+      penjelasan: "Shalat berjamaah lebih utama daripada sendirian." },
+    { nomor: 14, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Agar memperoleh pahala lebih besar, anak laki-laki dianjurkan shalat berjamaah di ...",
+      opsi: ["Masjid", "Kamar mandi", "Lapangan bola", "Pasar"], jawaban: 0,
+      penjelasan: "Shalat berjamaah di masjid lebih utama bagi laki-laki." },
+
+    /* No.15 */
+    { nomor: 15, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Pernyataan yang benar: pahala shalat sendirian ... pahala shalat berjamaah.",
+      opsi: ["Lebih kecil daripada", "Lebih besar daripada", "Sama dengan", "Dua kali lipat"], jawaban: 0,
+      penjelasan: "Sendirian 1 derajat, berjamaah 27 derajat; jadi lebih kecil." },
+    { nomor: 15, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Angka perbandingan keutamaan shalat sendiri berbanding berjamaah adalah ...",
+      opsi: ["1 : 27", "27 : 1", "1 : 7", "7 : 1"], jawaban: 0,
+      penjelasan: "Sendiri 1, berjamaah 27, jadi 1 : 27." },
+
+    /* No.16 */
+    { nomor: 16, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Manfaat shalat berjamaah sesuai hadis antara lain ...",
+      opsi: ["Pahala lebih besar dan mempererat kebersamaan", "Membuat capek", "Membuang waktu", "Tidak berguna"], jawaban: 0,
+      penjelasan: "Shalat berjamaah berpahala besar dan mempererat persaudaraan." },
+    { nomor: 16, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Pesan hadis mendorong umat Islam untuk ... ke masjid.",
+      opsi: ["Rajin berjamaah", "Jarang pergi", "Enggan pergi", "Tidak peduli"], jawaban: 0,
+      penjelasan: "Hadis menganjurkan rajin shalat berjamaah." },
+
+    /* No.17 */
+    { nomor: 17, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Dua orang shalat berjamaah, satu menjadi imam. Makmum berdiri agak ke belakang di sebelah ... imam.",
+      opsi: ["Kanan", "Kiri", "Depan", "Belakang jauh"], jawaban: 0,
+      penjelasan: "Satu makmum berdiri di sebelah kanan imam, sedikit ke belakang." },
+    { nomor: 17, bentuk: "PG", kategori: "Al-Qur'an & Hadis",
+      soal: "Bila makmum laki-laki hanya satu orang, ia berdiri di ... imam.",
+      opsi: ["Samping kanan", "Samping kiri", "Depan", "Atas"], jawaban: 0,
+      penjelasan: "Makmum tunggal berdiri di samping kanan imam." },
+
+    /* No.18 */
+    { nomor: 18, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Injil adalah kitab suci yang diturunkan kepada Nabi ...",
+      opsi: ["Isa a.s.", "Musa a.s.", "Daud a.s.", "Muhammad saw."], jawaban: 0,
+      penjelasan: "Kitab Injil diturunkan kepada Nabi Isa a.s." },
+    { nomor: 18, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Nabi Isa a.s. membawa ajaran dari kitab ...",
+      opsi: ["Injil", "Taurat", "Zabur", "Al-Qur'an"], jawaban: 0,
+      penjelasan: "Kitab Nabi Isa adalah Injil." },
+
+    /* No.19 */
+    { nomor: 19, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Dalil yang menunjukkan perintah iman kepada kitab Allah terdapat dalam Q.S. ...",
+      opsi: ["Ali 'Imran ayat 3", "Al-Falaq ayat 1", "Al-Kautsar ayat 2", "An-Nas ayat 3"], jawaban: 0,
+      penjelasan: "Q.S. Ali 'Imran ayat 3 adalah dalil iman kepada kitab Allah." },
+    { nomor: 19, bentuk: "PG", kategori: "Iman kepada Kitab",
+      soal: "Dalil yang bersumber dari wahyu (Al-Qur'an/hadis) disebut dalil naqli, sedangkan dari akal disebut dalil ...",
+      opsi: ["Aqli", "Khayali", "Cerita", "Mimpi"], jawaban: 0,
+      penjelasan: "Dalil dari akal disebut dalil aqli; dari wahyu disebut naqli." },
+
+    /* No.20 */
+    { nomor: 20, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Ketika berjanji akan belajar dengan giat besok, ucapan yang tepat adalah ...",
+      opsi: ["Insya Allah", "Astaghfirullah", "Innalillahi", "Subhanallah"], jawaban: 0,
+      penjelasan: "Insya Allah diucapkan saat berjanji/merencanakan sesuatu." },
+    { nomor: 20, bentuk: "PG", kategori: "Kalimat Tayyibah",
+      soal: "Mengucap 'Insya Allah' mengajarkan bahwa segala rencana bergantung pada kehendak ...",
+      opsi: ["Allah", "Manusia", "Teman", "Guru"], jawaban: 0,
+      penjelasan: "Insya Allah = jika Allah menghendaki; rencana bergantung pada-Nya." },
+
+    /* No.21 — Isian */
+    { nomor: 21, bentuk: "Isian", kategori: "Al-Qur'an & Hadis",
+      soal: "Lengkapilah! Jumlah derajat keutamaan shalat berjamaah adalah dua puluh ____ .",
+      opsi: ["tujuh", "lima", "satu", "tiga"], jawaban: 0,
+      penjelasan: "Dua puluh tujuh (27) derajat." },
+    { nomor: 21, bentuk: "Isian", kategori: "Al-Qur'an & Hadis",
+      soal: "Lengkapilah! Jika shalat berjamaah 27 derajat, maka shalat sendirian bernilai ____ derajat.",
+      opsi: ["1", "7", "17", "27"], jawaban: 0,
+      penjelasan: "Shalat sendirian 1 derajat, berjamaah 27 derajat." },
+
+    /* No.22 — Isian */
+    { nomor: 22, bentuk: "Isian", kategori: "Al-Qur'an & Hadis",
+      soal: "Lengkapilah! Salah satu pesan hadis: kita harus ____ shalat berjamaah.",
+      opsi: ["membiasakan", "meninggalkan", "melupakan", "menghindari"], jawaban: 0,
+      penjelasan: "Pesan hadis: membiasakan/rajin shalat berjamaah." },
+    { nomor: 22, bentuk: "Isian", kategori: "Al-Qur'an & Hadis",
+      soal: "Lengkapilah! Hadis menegaskan shalat berjamaah lebih banyak ____-nya daripada shalat sendirian.",
+      opsi: ["pahala", "dosa", "beban", "waktu"], jawaban: 0,
+      penjelasan: "Shalat berjamaah lebih banyak pahalanya (27 derajat)." },
+
+    /* No.23 — Isian */
+    { nomor: 23, bentuk: "Isian", kategori: "Al-Qur'an & Hadis",
+      soal: "Lengkapilah! Sunnah muakkadah adalah sunnah yang ____ untuk dikerjakan.",
+      opsi: ["sangat dianjurkan", "dilarang", "diharamkan", "dimakruhkan"], jawaban: 0,
+      penjelasan: "Sunnah muakkadah = sunnah yang sangat dianjurkan." },
+    { nomor: 23, bentuk: "Isian", kategori: "Al-Qur'an & Hadis",
+      soal: "Lengkapilah! Meskipun bukan wajib, shalat berjamaah hukumnya sunnah ____ .",
+      opsi: ["muakkadah", "haram", "makruh", "mubah"], jawaban: 0,
+      penjelasan: "Hukum shalat berjamaah adalah sunnah muakkadah." },
+
+    /* No.24 — Isian */
+    { nomor: 24, bentuk: "Isian", kategori: "Iman kepada Kitab",
+      soal: "Lengkapilah! Nabi yang menerima kitab Zabur adalah Nabi ____ .",
+      opsi: ["Daud", "Musa", "Isa", "Adam"], jawaban: 0,
+      penjelasan: "Kitab Zabur diturunkan kepada Nabi Daud a.s." },
+    { nomor: 24, bentuk: "Isian", kategori: "Iman kepada Kitab",
+      soal: "Lengkapilah! Kitab ____ menjadi pedoman bagi umat Nabi Daud a.s.",
+      opsi: ["Zabur", "Taurat", "Injil", "Suhuf"], jawaban: 0,
+      penjelasan: "Kitab Nabi Daud a.s. adalah Zabur." },
+
+    /* No.25 — Isian */
+    { nomor: 25, bentuk: "Isian", kategori: "Iman kepada Kitab",
+      soal: "Lengkapilah! Orang yang beriman kepada kitab Allah akan ____ ajaran di dalamnya.",
+      opsi: ["mengamalkan", "melanggar", "melupakan", "menolak"], jawaban: 0,
+      penjelasan: "Orang beriman akan mengamalkan ajaran kitab Allah." },
+    { nomor: 25, bentuk: "Isian", kategori: "Iman kepada Kitab",
+      soal: "Lengkapilah! Ciri orang beriman kepada Al-Qur'an adalah menjadikannya ____ hidup.",
+      opsi: ["pedoman", "hiasan", "mainan", "beban"], jawaban: 0,
+      penjelasan: "Al-Qur'an dijadikan pedoman hidup." },
+
+    /* No.26 — Uraian */
+    { nomor: 26, bentuk: "Uraian", kategori: "Kalimat Tayyibah", arab: "اَسْتَغْفِرُ اللهَ",
+      soal: "Tulisan Arab di atas dibaca ...",
+      opsi: ["Astaghfirullah", "Subhanallah", "Alhamdulillah", "Allahu Akbar"], jawaban: 0,
+      penjelasan: "اَسْتَغْفِرُ اللهَ dibaca 'Astaghfirullah', artinya aku mohon ampun kepada Allah." },
+    { nomor: 26, bentuk: "Uraian", kategori: "Kalimat Tayyibah", arab: "اِنْ شَاءَ اللهُ",
+      soal: "Tulisan Arab di atas dibaca ...",
+      opsi: ["Insya Allah", "Masya Allah", "Subhanallah", "Astaghfirullah"], jawaban: 0,
+      penjelasan: "اِنْ شَاءَ اللهُ dibaca 'Insya Allah', artinya jika Allah menghendaki." },
+
+    /* No.27 — Uraian */
+    { nomor: 27, bentuk: "Uraian", kategori: "Kalimat Tayyibah",
+      soal: "Tulisan Arab yang benar untuk lafal 'Astaghfirullah' adalah ...",
+      opsi: ["اَسْتَغْفِرُ اللهَ", "اللهُ اَكْبَرُ", "سُبْحَانَ اللهِ", "اَلْحَمْدُ لِلّٰهِ"], jawaban: 0,
+      penjelasan: "Lafal 'Astaghfirullah' ditulis اَسْتَغْفِرُ اللهَ." },
+    { nomor: 27, bentuk: "Uraian", kategori: "Kalimat Tayyibah",
+      soal: "Tulisan Arab yang benar untuk lafal 'Insya Allah' adalah ...",
+      opsi: ["اِنْ شَاءَ اللهُ", "مَا شَاءَ اللهُ", "اللهُ اَكْبَرُ", "سُبْحَانَ اللهِ"], jawaban: 0,
+      penjelasan: "Lafal 'Insya Allah' ditulis اِنْ شَاءَ اللهُ." },
+
+    /* No.28 — Uraian */
+    { nomor: 28, bentuk: "Uraian", kategori: "Kalimat Tayyibah",
+      soal: "Melihat hafalan temannya yang lancar, Budi memuji dengan ucapan ...",
+      opsi: ["Masya Allah", "Astaghfirullah", "Naudzubillah", "Innalillahi"], jawaban: 0,
+      penjelasan: "Masya Allah untuk memuji/kagum pada kebaikan atau prestasi." },
+    { nomor: 28, bentuk: "Uraian", kategori: "Kalimat Tayyibah",
+      soal: "Kalimat 'Masya Allah' menunjukkan rasa ... terhadap kebaikan atau prestasi.",
+      opsi: ["Kagum dan memuji", "Sedih", "Marah", "Takut"], jawaban: 0,
+      penjelasan: "Masya Allah mengungkapkan kekaguman dan pujian." },
+
+    /* No.29 — Uraian */
+    { nomor: 29, bentuk: "Uraian", kategori: "Al-Qur'an & Hadis",
+      soal: "Apa yang dimaksud dengan imam dalam shalat berjamaah? Jawaban tepat ...",
+      opsi: ["Orang yang berada di depan dan diikuti gerakannya oleh makmum", "Orang yang datang terlambat", "Orang yang mengumandangkan azan", "Orang yang tidak ikut shalat"], jawaban: 0,
+      penjelasan: "Imam adalah pemimpin shalat yang berada di depan dan diikuti makmum." },
+    { nomor: 29, bentuk: "Uraian", kategori: "Al-Qur'an & Hadis",
+      soal: "Mengapa shalat itu disebut 'berjamaah'? Jawaban yang tepat ...",
+      opsi: ["Karena dikerjakan bersama-sama oleh lebih dari satu orang", "Karena dikerjakan sendirian", "Karena dilakukan sambil duduk", "Karena tanpa imam"], jawaban: 0,
+      penjelasan: "Berjamaah berarti dikerjakan bersama-sama (imam dan makmum)." },
+
+    /* No.30 — Uraian */
+    { nomor: 30, bentuk: "Uraian", kategori: "Iman kepada Kitab",
+      soal: "Empat kitab Allah sesuai urutan turunnya adalah ...",
+      opsi: ["Taurat, Zabur, Injil, Al-Qur'an", "Al-Qur'an, Injil, Zabur, Taurat", "Zabur, Taurat, Al-Qur'an, Injil", "Injil, Al-Qur'an, Taurat, Zabur"], jawaban: 0,
+      penjelasan: "Urutannya: Taurat, Zabur, Injil, Al-Qur'an." },
+    { nomor: 30, bentuk: "Uraian", kategori: "Iman kepada Kitab",
+      soal: "Pasangan yang benar: Taurat untuk Nabi Musa, dan Al-Qur'an untuk Nabi ...",
+      opsi: ["Muhammad saw.", "Isa a.s.", "Daud a.s.", "Adam a.s."], jawaban: 0,
+      penjelasan: "Al-Qur'an diturunkan kepada Nabi Muhammad saw." },
   ],
 };

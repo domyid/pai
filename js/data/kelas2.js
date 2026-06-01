@@ -377,5 +377,257 @@ export const kelas2 = {
       soal: "Arti ayat ke-3 Q.S. Al-Kautsar ('Inna syani-aka huwal-abtar') adalah ...",
       opsi: ["Sungguh, orang yang membencimu dialah yang terputus (dari kebaikan)", "Sungguh, Kami beri kamu nikmat yang banyak", "Dirikanlah shalat dan berkurbanlah", "Aku berlindung kepada Tuhan"], jawaban: 0,
       penjelasan: "Artinya: 'Sungguh, orang yang membencimu dialah yang terputus'." },
+
+    /* ================= TAMBAHAN VARIAN (agar 5–6 per nomor) ================= */
+
+    /* No.1 */
+    { nomor: 1, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Lafal terakhir yang menutup bacaan Q.S. Al-Falaq adalah kata ...",
+      opsi: ["hasad (حَسَدَ)", "khalaq (خَلَقَ)", "waqab (وَقَبَ)", "falaq (الْفَلَقِ)"], jawaban: 0,
+      penjelasan: "Bacaan Al-Falaq ditutup dengan kata 'hasad' (حَسَدَ)." },
+    { nomor: 1, bentuk: "PG", kategori: "Al-Qur'an", arab: "اِذَا حَسَدَ",
+      soal: "Pada penggalan akhir Q.S. Al-Falaq di atas, kata yang paling akhir adalah ...",
+      opsi: ["حَسَدَ", "اِذَا", "شَرِّ", "حَاسِدٍ"], jawaban: 0,
+      penjelasan: "Kata paling akhir adalah حَسَدَ (hasad)." },
+
+    /* No.2 */
+    { nomor: 2, bentuk: "PG", kategori: "Tajwid (Mad)",
+      soal: "Bacaan panjang yang terjadi karena huruf alif, wau, atau ya disebut hukum bacaan ...",
+      opsi: ["Mad", "Idgham", "Ikhfa", "Iqlab"], jawaban: 0,
+      penjelasan: "Bacaan panjang karena huruf alif/wau/ya disebut Mad." },
+    { nomor: 2, bentuk: "PG", kategori: "Tajwid (Mad)", arab: "اِنَّآ",
+      soal: "Pada kata اِنَّآ, huruf nun diikuti alif sehingga dibaca panjang. Hukum bacaannya adalah ...",
+      opsi: ["Mad", "Qalqalah", "Gunnah", "Waqaf"], jawaban: 0,
+      penjelasan: "Ada alif yang membuat bacaan panjang 'innaa'. Hukumnya Mad." },
+
+    /* No.3 */
+    { nomor: 3, bentuk: "PG", kategori: "Al-Qur'an", arab: "وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ",
+      soal: "Lafal di atas terdapat dalam Q.S. Al-Falaq pada ayat ke- ...",
+      opsi: ["Ayat ke-5", "Ayat ke-4", "Ayat ke-3", "Ayat ke-2"], jawaban: 0,
+      penjelasan: "Itu ayat ke-5 (terakhir) Al-Falaq." },
+    { nomor: 3, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Q.S. Al-Falaq ayat ke-2 berbunyi ...",
+      opsi: ["Min syarri ma khalaq", "Qul a'udzu birabbil-falaq", "Wa min syarri ghasiqin idza waqab", "Wa min syarri hasidin idza hasad"], jawaban: 0,
+      penjelasan: "Ayat ke-2 berbunyi 'Min syarri ma khalaq'." },
+
+    /* No.4 */
+    { nomor: 4, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Lafal 'Fa shalli lirabbika wanhar' berisi perintah untuk ...",
+      opsi: ["Mendirikan shalat dan berkurban", "Berpuasa dan zakat", "Membaca dan menulis", "Tidur dan makan"], jawaban: 0,
+      penjelasan: "Artinya 'dirikanlah shalat karena Tuhanmu dan berkurbanlah'." },
+    { nomor: 4, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Sebagai rasa syukur, Q.S. Al-Kautsar memerintahkan kita mendirikan shalat dan ...",
+      opsi: ["Berkurban", "Berpuasa", "Tidur", "Bermain"], jawaban: 0,
+      penjelasan: "Perintahnya: mendirikan shalat dan berkurban." },
+
+    /* No.5 */
+    { nomor: 5, bentuk: "PG", kategori: "Akidah",
+      soal: "Allah Swt. menciptakan malaikat dari ...",
+      opsi: ["Nur (cahaya)", "Tanah liat", "Nyala api", "Tetesan air"], jawaban: 0,
+      penjelasan: "Malaikat diciptakan dari nur (cahaya)." },
+    { nomor: 5, bentuk: "PG", kategori: "Akidah",
+      soal: "Pernyataan yang benar tentang penciptaan makhluk adalah ...",
+      opsi: ["Malaikat dari cahaya, manusia dari tanah", "Malaikat dari api", "Malaikat dari tanah", "Malaikat dari air"], jawaban: 0,
+      penjelasan: "Malaikat dari cahaya, manusia dari tanah, jin dari api." },
+
+    /* No.6 */
+    { nomor: 6, bentuk: "PG", kategori: "Akidah",
+      soal: "Karena malaikat selalu taat, kita dapat meneladaninya dengan ...",
+      opsi: ["Selalu mematuhi perintah Allah dan orang tua", "Sering membantah", "Malas beribadah", "Suka berbohong"], jawaban: 0,
+      penjelasan: "Meneladani malaikat = selalu taat kepada Allah dan orang tua." },
+    { nomor: 6, bentuk: "PG", kategori: "Akidah",
+      soal: "Sifat malaikat yang patut diteladani oleh anak saleh adalah ...",
+      opsi: ["Taat dan tidak sombong", "Suka marah", "Iri hati", "Pemalas"], jawaban: 0,
+      penjelasan: "Malaikat taat dan rendah hati; itulah yang diteladani." },
+
+    /* No.7 */
+    { nomor: 7, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Arti nama 'Al-Falaq' berhubungan dengan datangnya waktu ...",
+      opsi: ["Subuh", "Malam", "Siang", "Sore"], jawaban: 0,
+      penjelasan: "Al-Falaq artinya waktu subuh." },
+    { nomor: 7, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Fajar yang menyingsing membelah kegelapan di waktu pagi disebut ...",
+      opsi: ["Al-Falaq", "Al-Lail", "Asy-Syams", "Al-Qamar"], jawaban: 0,
+      penjelasan: "Al-Falaq berarti waktu subuh / fajar yang menyingsing." },
+
+    /* No.8 */
+    { nomor: 8, bentuk: "PG", kategori: "Tajwid (Mad)",
+      soal: "Huruf ya (ي) apabila menjadi tanda bacaan panjang termasuk huruf ...",
+      opsi: ["Mad", "Qalqalah", "Syamsiyah", "Qamariyah"], jawaban: 0,
+      penjelasan: "Ya (ي) termasuk huruf mad bersama alif dan wau." },
+    { nomor: 8, bentuk: "PG", kategori: "Tajwid (Mad)",
+      soal: "Pasangan huruf mad yang benar adalah ...",
+      opsi: ["Alif, wau, ya", "Ba, ta, tsa", "Jim, ha, kha", "Dal, dzal, ra"], jawaban: 0,
+      penjelasan: "Huruf mad: alif (ا), wau (و), ya (ي)." },
+
+    /* No.9 */
+    { nomor: 9, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Sesudah surah Al-Ma'un (ke-107), terdapat surah Al-Kautsar yang merupakan surah ke- ...",
+      opsi: ["108", "109", "107", "110"], jawaban: 0,
+      penjelasan: "Al-Kautsar adalah surah ke-108, sesudah Al-Ma'un." },
+    { nomor: 9, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Di antara pilihan berikut, nomor urut surah Al-Kautsar adalah ...",
+      opsi: ["108", "118", "180", "88"], jawaban: 0,
+      penjelasan: "Al-Kautsar berada pada urutan ke-108." },
+
+    /* No.10 */
+    { nomor: 10, bentuk: "PG", kategori: "Akidah",
+      soal: "Iman kepada malaikat berada pada urutan rukun iman yang ...",
+      opsi: ["Kedua", "Pertama", "Ketiga", "Keempat"], jawaban: 0,
+      penjelasan: "Iman kepada malaikat adalah rukun iman ke-2." },
+    { nomor: 10, bentuk: "PG", kategori: "Akidah",
+      soal: "Rukun iman pertama adalah iman kepada Allah, yang kedua iman kepada ...",
+      opsi: ["Malaikat", "Kitab", "Rasul", "Qadar"], jawaban: 0,
+      penjelasan: "Rukun iman ke-2 adalah iman kepada malaikat." },
+
+    /* No.11 */
+    { nomor: 11, bentuk: "PG", kategori: "Akidah",
+      soal: "Malaikat yang menjadi penghubung wahyu antara Allah dan para rasul adalah ...",
+      opsi: ["Jibril", "Mikail", "Malik", "Atid"], jawaban: 0,
+      penjelasan: "Malaikat Jibril menyampaikan wahyu." },
+    { nomor: 11, bentuk: "PG", kategori: "Akidah",
+      soal: "Al-Qur'an diturunkan kepada Nabi Muhammad saw. melalui perantara Malaikat ...",
+      opsi: ["Jibril", "Israfil", "Izrail", "Ridwan"], jawaban: 0,
+      penjelasan: "Malaikat Jibril menyampaikan wahyu (Al-Qur'an)." },
+
+    /* No.12 */
+    { nomor: 12, bentuk: "PG", kategori: "Akidah",
+      soal: "Setiap kebaikan yang kita lakukan akan dicatat oleh Malaikat ...",
+      opsi: ["Raqib", "Atid", "Malik", "Munkar"], jawaban: 0,
+      penjelasan: "Malaikat Raqib mencatat amal baik." },
+    { nomor: 12, bentuk: "PG", kategori: "Akidah",
+      soal: "Malaikat Raqib bertugas mencatat amal ...",
+      opsi: ["Baik", "Buruk", "Tidur", "Makan"], jawaban: 0,
+      penjelasan: "Raqib mencatat amal baik, Atid mencatat amal buruk." },
+
+    /* No.13 */
+    { nomor: 13, bentuk: "PG", kategori: "Akidah",
+      soal: "Bukti iman kepada malaikat membuat kita meninggalkan perbuatan ...",
+      opsi: ["Tercela seperti berbohong", "Terpuji seperti jujur", "Baik seperti menolong", "Mulia seperti sedekah"], jawaban: 0,
+      penjelasan: "Kita menghindari perbuatan tercela karena malaikat mencatatnya." },
+    { nomor: 13, bentuk: "PG", kategori: "Akidah",
+      soal: "Agar tidak dicatat sebagai amal buruk, kita harus menghindari ...",
+      opsi: ["Berbuat curang", "Shalat", "Bersedekah", "Belajar"], jawaban: 0,
+      penjelasan: "Berbuat curang adalah amal buruk yang harus dihindari." },
+
+    /* No.14 */
+    { nomor: 14, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Ibadah berkurban dalam Al-Kautsar dilakukan dengan cara ...",
+      opsi: ["Menyembelih hewan kurban", "Berpuasa sehari", "Membaca surat", "Berenang"], jawaban: 0,
+      penjelasan: "Berkurban dilakukan dengan menyembelih hewan kurban." },
+    { nomor: 14, bentuk: "PG", kategori: "Al-Qur'an",
+      soal: "Q.S. Al-Kautsar mengajarkan dua ibadah, yaitu shalat dan menyembelih ...",
+      opsi: ["Hewan kurban", "Ayam goreng", "Buah", "Sayur"], jawaban: 0,
+      penjelasan: "Dua ibadahnya: shalat dan menyembelih hewan kurban." },
+
+    /* No.15 */
+    { nomor: 15, bentuk: "PG", kategori: "Akidah",
+      soal: "Sikap anak yang beriman kepada malaikat ketika sedang sendirian di rumah adalah ...",
+      opsi: ["Tetap berbuat baik dan jujur", "Berbuat nakal", "Berbohong", "Bermalas-malasan"], jawaban: 0,
+      penjelasan: "Anak beriman tetap berbuat baik karena yakin diawasi malaikat." },
+    { nomor: 15, bentuk: "PG", kategori: "Akidah",
+      soal: "Keyakinan bahwa malaikat mencatat kebaikan membuat kita rajin ...",
+      opsi: ["Beribadah dan menolong sesama", "Bermalas-malasan", "Berkelahi", "Mengganggu teman"], jawaban: 0,
+      penjelasan: "Iman kepada malaikat mendorong kita rajin berbuat baik." },
+
+    /* No.16 — Isian */
+    { nomor: 16, bentuk: "Isian", kategori: "Al-Qur'an", arab: "وَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَ",
+      soal: "Lengkapilah! Lafal di atas adalah Q.S. Al-Falaq ayat ke- ____ .",
+      opsi: ["3", "2", "4", "5"], jawaban: 0,
+      penjelasan: "Itu ayat ke-3 Al-Falaq." },
+    { nomor: 16, bentuk: "Isian", kategori: "Al-Qur'an",
+      soal: "Lengkapilah! Ayat pertama Q.S. Al-Falaq berbunyi 'Qul a'udzu birabbil ____'.",
+      opsi: ["falaq", "kautsar", "nas", "ikhlas"], jawaban: 0,
+      penjelasan: "Ayat 1: 'Qul a'udzu birabbil-falaq'." },
+
+    /* No.17 — Isian */
+    { nomor: 17, bentuk: "Isian", kategori: "Al-Qur'an",
+      soal: "Lengkapilah! Dalam Al-Falaq kita memohon perlindungan dari kejahatan ____ yang dengki.",
+      opsi: ["orang", "hewan", "tumbuhan", "benda"], jawaban: 0,
+      penjelasan: "Ayat ke-5: dari kejahatan orang yang dengki." },
+    { nomor: 17, bentuk: "Isian", kategori: "Al-Qur'an",
+      soal: "Lengkapilah! Kita meminta perlindungan dari kejahatan waktu ____ apabila telah gelap gulita.",
+      opsi: ["malam", "siang", "subuh", "pagi"], jawaban: 0,
+      penjelasan: "Ayat ke-3: dari kejahatan malam apabila gelap gulita." },
+
+    /* No.18 — Isian */
+    { nomor: 18, bentuk: "Isian", kategori: "Al-Qur'an",
+      soal: "Lengkapilah! Surah yang turun setelah hijrah di Madinah disebut Madaniyah, yang turun di Mekah disebut ____ .",
+      opsi: ["Makkiyah", "Madaniyah", "Syamiyah", "Yamaniyah"], jawaban: 0,
+      penjelasan: "Surah yang turun di Mekah disebut Makkiyah." },
+    { nomor: 18, bentuk: "Isian", kategori: "Al-Qur'an",
+      soal: "Lengkapilah! Al-Falaq turun sebelum Nabi hijrah, sehingga tergolong surah ____ .",
+      opsi: ["Makkiyah", "Madaniyah", "panjang", "terakhir"], jawaban: 0,
+      penjelasan: "Al-Falaq tergolong Makkiyah." },
+
+    /* No.19 — Isian */
+    { nomor: 19, bentuk: "Isian", kategori: "Akidah",
+      soal: "Lengkapilah! Alat yang ditiup Malaikat Israfil pada hari kiamat disebut ____ .",
+      opsi: ["sangkakala", "gendang", "seruling", "gitar"], jawaban: 0,
+      penjelasan: "Malaikat Israfil meniup sangkakala." },
+    { nomor: 19, bentuk: "Isian", kategori: "Akidah",
+      soal: "Lengkapilah! Tiupan sangkakala Malaikat Israfil menjadi tanda terjadinya hari ____ .",
+      opsi: ["kiamat", "raya", "minggu", "libur"], jawaban: 0,
+      penjelasan: "Sangkakala ditiup sebagai tanda hari kiamat." },
+
+    /* No.20 — Isian */
+    { nomor: 20, bentuk: "Isian", kategori: "Akidah",
+      soal: "Lengkapilah! Tidak seperti manusia yang dapat berbuat salah, ____ tidak pernah berbuat dosa.",
+      opsi: ["malaikat", "jin", "setan", "hewan"], jawaban: 0,
+      penjelasan: "Malaikat tidak pernah berbuat dosa dan selalu taat." },
+    { nomor: 20, bentuk: "Isian", kategori: "Akidah",
+      soal: "Lengkapilah! Malaikat tidak makan, tidak tidur, dan selalu ____ kepada Allah.",
+      opsi: ["taat", "lupa", "lalai", "membangkang"], jawaban: 0,
+      penjelasan: "Sifat malaikat adalah selalu taat kepada Allah." },
+
+    /* No.21 — Uraian */
+    { nomor: 21, bentuk: "Uraian", kategori: "Al-Qur'an",
+      soal: "Apa arti 'Al-Kautsar' menurut bahasa? Pilih jawaban paling tepat ...",
+      opsi: ["Nikmat atau kebaikan yang sangat banyak dari Allah", "Sebuah bencana besar", "Nama gunung di Mekah", "Nama seorang malaikat"], jawaban: 0,
+      penjelasan: "Al-Kautsar berarti nikmat/kebaikan yang sangat banyak." },
+    { nomor: 21, bentuk: "Uraian", kategori: "Al-Qur'an",
+      soal: "Selain berarti nikmat yang banyak, Al-Kautsar juga merupakan nama ...",
+      opsi: ["Sebuah telaga di surga untuk Nabi Muhammad saw.", "Sebuah masjid di Madinah", "Sebuah kota di Arab", "Sebuah kitab suci"], jawaban: 0,
+      penjelasan: "Al-Kautsar juga nama telaga di surga." },
+
+    /* No.22 — Uraian */
+    { nomor: 22, bentuk: "Uraian", kategori: "Akidah",
+      soal: "Mengapa Malaikat Jibril disebut Ruhulkudus? Jawaban yang tepat ...",
+      opsi: ["Karena ia adalah ruh suci yang menyampaikan wahyu Allah", "Karena ia menjaga neraka", "Karena ia membagi rezeki", "Karena ia mencabut nyawa"], jawaban: 0,
+      penjelasan: "Ruhulkudus = ruh suci; Jibril membawa wahyu suci." },
+    { nomor: 22, bentuk: "Uraian", kategori: "Akidah",
+      soal: "Selain 'Ruhulkudus', Malaikat Jibril juga memiliki julukan lain, yaitu ...",
+      opsi: ["Ruhulamin", "Malik", "Ridwan", "Izrail"], jawaban: 0,
+      penjelasan: "Jibril dijuluki Ruhulkudus dan Ruhulamin." },
+
+    /* No.23 — Uraian (pasangan) */
+    { nomor: 23, bentuk: "Uraian", kategori: "Akidah",
+      soal: "Tuliskan dua nama malaikat beserta tugasnya! Pasangan yang benar adalah ...",
+      opsi: ["Israfil → meniup sangkakala, Izrail → mencabut nyawa", "Israfil → mencabut nyawa, Izrail → meniup sangkakala", "Malik → menjaga surga, Ridwan → menjaga neraka", "Raqib → meniup sangkakala, Atid → membagi rezeki"], jawaban: 0,
+      penjelasan: "Israfil meniup sangkakala; Izrail mencabut nyawa." },
+    { nomor: 23, bentuk: "Uraian", kategori: "Akidah",
+      soal: "Tuliskan dua nama malaikat beserta tugasnya! Pasangan yang benar adalah ...",
+      opsi: ["Jibril → menyampaikan wahyu, Mikail → membagi rezeki", "Jibril → membagi rezeki, Mikail → menyampaikan wahyu", "Munkar → menjaga neraka, Nakir → menjaga surga", "Malik → mencatat amal, Ridwan → mencabut nyawa"], jawaban: 0,
+      penjelasan: "Jibril menyampaikan wahyu; Mikail membagi rezeki." },
+
+    /* No.24 — Uraian */
+    { nomor: 24, bentuk: "Uraian", kategori: "Al-Qur'an",
+      soal: "Q.S. Al-Falaq mengajarkan kita agar ... Pilih jawaban paling lengkap.",
+      opsi: ["Hanya memohon perlindungan kepada Allah, bukan kepada selain-Nya", "Meminta tolong kepada jin", "Takut kepada semua makhluk", "Tidak perlu berdoa"], jawaban: 0,
+      penjelasan: "Al-Falaq mengajarkan berlindung hanya kepada Allah." },
+    { nomor: 24, bentuk: "Uraian", kategori: "Al-Qur'an",
+      soal: "Q.S. Al-Falaq memerintahkan berlindung dari empat kejahatan. Salah satunya adalah kejahatan ...",
+      opsi: ["Orang yang dengki", "Orang yang jujur", "Orang yang shalat", "Orang yang baik"], jawaban: 0,
+      penjelasan: "Salah satu kejahatan: orang yang dengki (ayat ke-5)." },
+
+    /* No.25 — Uraian */
+    { nomor: 25, bentuk: "Uraian", kategori: "Al-Qur'an",
+      soal: "Ayat ke-3 (penutup) Q.S. Al-Kautsar diawali dengan kata ...",
+      opsi: ["Inna (اِنَّ)", "Qul (قُلْ)", "Fa (فَ)", "Wa (وَ)"], jawaban: 0,
+      penjelasan: "Ayat ke-3: 'Inna syani-aka huwal-abtar'." },
+    { nomor: 25, bentuk: "Uraian", kategori: "Al-Qur'an",
+      soal: "Urutan Al-Kautsar: ayat 1 'Inna a'thainaka...', ayat 2 'Fa shalli...', maka ayat ke-3 berbunyi ...",
+      opsi: ["Inna syani-aka huwal-abtar", "Qul a'udzu birabbil-falaq", "Min syarri ma khalaq", "Alhamdulillahi rabbil-'alamin"], jawaban: 0,
+      penjelasan: "Ayat ke-3 Al-Kautsar: 'Inna syani-aka huwal-abtar'." },
   ],
 };

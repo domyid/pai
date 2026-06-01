@@ -55,10 +55,10 @@ Sesuai permintaan, **semua bentuk soal dibuat menjadi pilihan ganda**, namun tam
 - **Isian** → "melengkapi titik-titik" `(____)` dengan opsi kata/angka singkat.
 - **Uraian** → "pilih penjelasan/jawaban yang paling tepat & lengkap" (opsi berupa kalimat).
 
-Setiap soal diberi label bentuknya. Tiap nomor resmi punya **3–4 varian** soal, dan tiap ujian
+Setiap soal diberi label bentuknya. Tiap nomor resmi punya **5–6 varian** soal, dan tiap ujian
 mengambil **satu varian untuk tiap nomor (urut 1→25 / 1→30)** — jadi panjang & cakupan ujian
-selalu sama persis dengan kisi-kisi, tetapi saat diulang soalnya berganti-ganti.
-Total bank: **±79 soal kelas 2** dan **±91 soal kelas 3**.
+selalu sama persis dengan kisi-kisi, tetapi saat diulang soalnya berganti-ganti (bisa diulang
+banyak kali tanpa cepat hafal). Total bank: **129 soal kelas 2** dan **151 soal kelas 3**.
 
 - **Kelas 2**: Q.S. Al-Falaq, Q.S. Al-Kautsar, Tajwid (Mad), Iman kepada Malaikat.
 - **Kelas 3**: Hadis Shalat Berjamaah & Penulisan Arab, Iman kepada Kitab-Kitab Allah, Kalimat Tayyibah.
